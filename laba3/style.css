@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    text-align: start;
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+a:hover {
+    text-decoration:underline;
+}
+
+
+body{
+    background-color: rgb(152, 251, 152);
+}
+.container{
+    margin: auto;
+    width: 1400px;
+}
+.header{
+    background-color: #66CDAA;
+    height: 100px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content:end;
+    outline: 5px solid white;
+    outline-offset: -8px;
+}
+.header__item{
+    display: inline-block;
+    background-color: #fff;
+    margin: 10px 20px ;
+    text-align: center;
+    height: 30px;
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid black
+}
+.header__current{
+    margin-left: 50px;
+}
+.header__item:hover{
+    background-color: black;
+}
+.header__item:hover a{
+    color: white !important;
+}
+.header__position{
+    margin-right: 50px;
+}
+.content{
+    display: flex;
+    justify-content: space-around ;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+.content-left{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title title "
+    "info info info"
+    "contact films films"
+    "contact music music";
+    
+    background-color: rgb(255, 0, 0);
+}
+.title{
+    grid-area: title;
+}
+.info{
+    grid-area: info
+}
+.films{
+    grid-area: films;
+}
+.music{
+    grid-area:music;
+}
+.contact{
+    grid-area:contact;
+}
+
+.content-right{
+    display: grid;
+    gap: 15px;
+    background-color: #66CDAA;
+    
+}
+.content-right img{
+    height:180px;
+    width: 280px;
+}
+
+
+.card{
+    width: 550px;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    outline: 5px solid white;
+    outline-offset: -8px;
+    background-color: #66CDAA
+}
+.block {
+    
+    background-color: white;
+    
+    text-align: center;
+    padding: 10px 10px;
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+.block:hover{
+    opacity: 80%;
+}
+
