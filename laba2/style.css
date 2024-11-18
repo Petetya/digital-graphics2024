@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(152, 251, 152);
+}
+.content{
+    display: flex;
+    justify-content: space-around ;
+    height: 100vh;
+    margin: auto;
+}
+.content-left{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title title "
+    "info info info"
+    "contact films films"
+    "contact music music";
+    
+    background-color: rgb(102, 205, 170);
+}
+.title{
+    grid-area: title;
+}
+.info{
+    grid-area: info
+}
+.films{
+    grid-area: films;
+}
+.music{
+    grid-area:music;
+}
+.contact{
+    grid-area:contact;
+}
+
+.content-right{
+    display: grid;
+    gap: 15px;
+    background-color: #66CDAA;
+    
+}
+.content-right img{
+    height:180px;
+    width: 280px;
+}
+
+
+.card{
+    width: 550px;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    outline: 5px solid white;
+    outline-offset: -8px;
+    background-color: #66CDAA
+}
+.block {
+    
+    background-color: white;
+    
+    text-align: center;
+    padding: 10px 10px;
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+.block:hover{
+    opacity: 80%;
+}
+
+ul,
+ol {
+    text-align: start;
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+a:hover {
+    text-decoration:underline;
+}
+
