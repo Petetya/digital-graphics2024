@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#photo">Фотографии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cards">Карточки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Биография</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fimls.html">Фильмы</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+    <h1 class="mt-4" id="carousel">Карусель с фотографиями</h1>
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    	<div class="carousel-indicators">
+      	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+       	 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+       	 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+  	  </div>
+   	 <div id="photo" class="carousel-inner">
+    	    <div class="carousel-item active">
+     	       <img src="https://avatars.mds.yandex.net/i?id=68263d8588d836bff8d02fe573b514cccf647484-9868376-images-thumbs&n=13" class="d-block w-100" alt="Фото 1">
+     	   </div>
+     	   <div class="carousel-item">
+            <img src="https://avatars.mds.yandex.net/i?id=d3cc4b6a7f64ae3523f4dd5dd3419d55f5d5d6dc12da7b7b-10246134-images-thumbs&n=13" class="d-block w-100" alt="Фото 2">
+     	   </div>
+     	   <div class="carousel-item">
+     	       <img src="https://avatars.mds.yandex.net/i?id=866247607a9765c1a80c1bd9a6dc0991a6dc175a-9181393-images-thumbs&n=13" class="d-block w-100" alt="Фото 3">
+      	  </div>
+   	 </div>
+   	 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       	 <span class="visually-hidden">Предыдущий</span>
+   	 </button>
+   	 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+   	     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  	      <span class="visually-hidden">Следующий</span>
+  	  </button>
+	</div>
+
+    	<h2 class="mt-4" id="cards">Фильмы актёра</h2>
+   	 <div class="row">
+   	     <div class="col-md-4">
+   	         <div class="card mb-4">
+    	            <img src="https://avatars.mds.yandex.net/i?id=9c3dcdbfb30acc33997bd98350ff55f6-3693917-images-thumbs&n=13" class="card-img-top" alt="Постер фильма 1">
+    	            <div class="card-body">
+     	               <h5 class="card-title">Поймай меня, если сможешь</h5>
+     	               <p class="card-text">Фильм о молодом мошеннике Фрэнке Эбигнейле, который, используя свои навыки обмана, успешно выдает себя за пилота, врача и юриста, в то время как за ним по пятам следует упорный агент ФБР.</p>
+   	                 <a href="https://www.kinopoisk.ru/film/324/" class="btn btn-primary">Смотреть на Кинопоиск</a>
+   	             </div>
+   	         </div>
+   	     </div>
+  	      <div class="col-md-4">
+  	          <div class="card mb-4">
+  	              <img src="https://avatars.mds.yandex.net/i?id=e715956891e1782d82bdeff696cb55dfdfe7ac37-4032389-images-thumbs&n=13" class="card-img-top" alt="Постер фильма 2">
+   	             <div class="card-body">
+     	               <h5 class="card-title">Волк с Уолл-стрит </h5>
+             	       <p class="card-text">Биографическая черная комедия о жизни Джордана Белфорта, амбициозного биржевого брокера, который находит богатство и успех в мире финансовых махинаций, но в итоге сталкивается с последствиями своей безудержной жизни.</p>
+             	       <a href="https://www.kinopoisk.ru/film/462682/" class="btn btn-primary">Смотреть на Кинопоиск</a>
+            	    </div>
+         	   </div>
+     	   </div>
+     	   <div class="col-md-4">
+           	 <div class="card mb-4">
+           	     <img src="https://avatars.mds.yandex.net/i?id=76133704a9248f4c0e6b92c5708d5680-4417086-images-thumbs&n=13" class="card-img-top" alt="Постер фильма 3">
+            	    <div class="card-body">
+           	         <h5 class="card-title">Остров проклятых </h5>
+           	         <p class="card-text">Двое приставов расследуют побег пациентки из мрачной психбольницы.</p>
+           	         <a href="https://www.kinopoisk.ru/film/397667/" class="btn btn-primary">Смотреть на Кинопоиск</a>
+           	     </div>
+         	   </div>
+      	  </div>
+ 	   </div>
+
+   	 <h2 class="mt-4" id="bio">Краткая информация об актёре</h2>
+   	 <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#infoCollapse">Показать/Скрыть информацию</button>
+  	  <div class="collapse mt-2" id="infoCollapse">
+    	    <div class="card card-body">
+      	      <p>Где родился: 	11 ноября 1974, Лос-Анджелес, Калифорния, США</p>
+     	       <p>Где учился:<br> Обучался в Начальной школе Сидд, потом поступил в Центр расширенных наук Лос-Анджелеса, в котором проучился четыре года. Затем пошёл в старшую школу Джона Маршалла. Со слов Ди Каприо, в школах ему совершенно не нравилось, поэтому (поскольку на тот момент он уже начал актёрскую карьеру) он постоянно просил Ирмелин разрешить ему бросить их, чтобы у него было больше времени ходить на прослушивания и тем самым улучшить их финансовое положение. В конечном итоге он бросил школу после третьего класса, когда получил общешкольную справку о среднем образовании.</p>
+      	      <p>Личная жизнь:<br> В 1990-х годах актёр встречался с датской моделью Хеленой Кристенсен.<br>
+С 2000 по 2005 год он был в отношениях с бразильской моделью Жизель Бюндхен.<br>
+С 2006 года по 2009 год Ди Каприо встречался с израильской моделью Бар Рафаэли.<br>
+C июня 2011 года актёр встречался с актрисой Блейк Лайвли. <br>
+В декабре 2011 года стало известно, что Ди Каприо начал встречаться с моделью нижнего белья бренда Victoria’s Secret Эрин Хитертон, однако в ноябре 2012 года пара объявила о расставании. <br>
+В мае 2013 года у актёра начались отношения с немецкой моделью Тони Гаррн, которые завершились в декабре следующего года. <br>
+С конца 2017 года по 2022 год Ди Каприо находился в отношениях с Камилой Морроне, актрисой и моделью аргентинского происхождения, падчерицей Аль Пачино. <br>
+В сентябре 2023 года Леонардо начал встречаться с моделью итальянского происхождения Витторией Черетти. </p>
+        	</div>
+    	</div>
+	</div>
+</body>
+</html>

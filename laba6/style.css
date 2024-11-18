@@ -1,0 +1,29 @@
+
+body {
+    padding-top: 56px; /* Отступ для фиксированной навигации */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+.carousel {
+    max-width: 750px; /* Установите максимальную ширину карусели */
+    margin: auto; /* Центрирование карусели */
+}
+
+.carousel-inner img {
+    max-height: 750px; /* Установите максимальную высоту изображения */
+    object-fit: cover; /* Обеспечивает правильное соотношение сторон */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Уменьшите ширину кнопок навигации */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px; /* Установите ширину иконок кнопок */
+    height: 30px; /* Установите высоту иконок кнопок */
+}
+data-bs-spy {
+    position: relative;
+}
