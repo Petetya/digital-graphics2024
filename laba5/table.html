@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li class="header__item header__position">
+                    <a href="./index.html">
+                        Главная страница
+                    </a>
+                </li>
+                <li class="header__item header__position">
+                    <a href="./page2.html">
+                        Позиционирование элементов
+                    </a>
+                </li>
+                <li class="header__item header__current">
+                    <a href="#">
+                        Текущая страница
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="table">
+	
+	<h1><center>Добавить новую строку в таблицу</h1>
+
+    		<form id="dataForm">
+        		<input type="text" id="id" placeholder="id" required>
+       			<input type="text" size="40" id="fio" placeholder="ФИО" required>
+        		<input type="text" id="number" placeholder="номер группы" required>
+			<input type="text" id="floor" placeholder="пол" required>
+			<input type="text" id="age" placeholder="возраст" required>
+			<input type="text" size="30" id="title" placeholder="название направления" required>
+        		<button style="width: 150px; height: 55px; type="submit">Добавить</button>
+    		</form>
+            <table id="dataTable">
+                <caption class="table__caption">
+                    Таблица с информацией о людях
+                </caption>
+                <thead class="table__head">
+                    <tr>
+                        <th>id</th>
+                        <th>ФИО</th>
+                        
+                        <th>номер группа</th>
+                        <th>пол</th>
+                        <th>возраст</th>
+                        
+                        <th>название направления</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr>
+                        <td>1023</td>
+                        <td>Зубков Пётр Владимирович</td>
+                       
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1023</td>
+                        <td>Зубков Пётр Владимирович</td>
+                        
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                       
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1023</td>
+                        <td>Зубков Пётр Владимирович</td>
+                        
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1023</td>
+                        <td>Зубков Пётр Владимирович</td>
+                        
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1023</td>
+                        <td>Зубков Пётр Владимирович</td>
+                        
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        
+                        <td>ИВТ</td>
+                    </tr>
+		    <script>
+       			 document.getElementById('dataForm').addEventListener('submit', function(event) {
+            		event.preventDefault(); // Предотвращаем отправку формы
+
+            		// Получаем значения из полей ввода
+            		const id = document.getElementById('id').value;
+            		const fio = document.getElementById('fio').value;
+            		const number = document.getElementById('number').value;
+			const floor = document.getElementById('floor').value;
+			const age = document.getElementById('age').value;
+			const title = document.getElementById('title').value;
+
+            		// Создаем новую строку таблицы
+            		const newRow = document.createElement('tr');
+            		newRow.innerHTML = `<td>${id}</td><td>${fio}</td><td>${number}</td><td>${floor}</td><td>${age}</td><td>${title}</td>`;
+
+            		// Добавляем новую строку в таблицу
+            		document.querySelector('#dataTable tbody').appendChild(newRow);
+
+            		// Очищаем поля ввода
+            		document.getElementById('dataForm').reset();
+        		});
+    		   </script>	
+			
+                </tbody>
+                
+            </table>
+</body>
+</html>

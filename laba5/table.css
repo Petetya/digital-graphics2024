@@ -1,0 +1,40 @@
+
+table, tr, rd{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+th{
+    background-color: yellow;
+    text-align: left;
+    padding: 5px;
+}
+td{
+
+    padding: 5px;
+    outline: none;
+    margin: 10px;
+    text-align: center;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+tbody > :nth-child(n) {
+    background-color: rgb(176, 196, 222);
+}
+
+.table{
+    padding: 10px;
+    background-color: #66CDAA;
+    
+    background-color: #AFEEEE;
+    outline: 5px solid white;
+    outline-offset: -8px;
+}
+.table__caption{
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
