@@ -1,0 +1,79 @@
+.actor {
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 55, 55);
+    width: auto;
+    padding: 10px;
+}
+
+.container-for-card {
+    display: flex;
+    background-color: rgb(49, 60, 60);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.container-for-info {
+    text-align: center;
+    background-color: rgb(49, 60, 60);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    color: white;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 55, 55);
+    border-radius: 5px;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+data-bs-spy {
+    position: relative;
+}
+
+.class-cards {
+    width: 200px;
+    height: 280px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    padding-top: 56px; /* Отступ для фиксированной навигации */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+.carousel {
+    max-width: 750px; /* Установите максимальную ширину карусели */
+    margin: auto; /* Центрирование карусели */
+}
+
+.carousel-inner img {
+    max-height: 750px; /* Установите максимальную высоту изображения */
+    object-fit: cover; /* Обеспечивает правильное соотношение сторон */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Уменьшите ширину кнопок навигации */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px; /* Установите ширину иконок кнопок */
+    height: 30px; /* Установите высоту иконок кнопок */
+}
