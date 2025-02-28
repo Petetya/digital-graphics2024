@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const lab4_1 = require("./lab4");
+const homeOwner = new lab4_1.Transport.HomeOwner("surname", "name", "middlename", new Date(), lab4_1.Transport.TypeOfDocument.FirstType, 1, 1);
+homeOwner.printInfo();
+const mySUV = new lab4_1.Transport.SUV("brand", "model", 1, "29r32982h", 1, "brwuinienv");
+mySUV.printVehicleInfo();
+const sedanKia = new lab4_1.Transport.SedanKia();
+sedanKia.printVehicleInfo();
+const hondaShine = new lab4_1.Transport.HomeOwner("surname", "name", "middlename", new Date(), lab4_1.Transport.TypeOfDocument.FirstType, 1, 2);
+hondaShine.printInfo();
+const vehicles = [];
+vehicles.push(new lab4_1.Transport.SedanKia());
+vehicles.push(new lab4_1.Transport.SedanKia());
+const myVehicleStorage = new lab4_1.Transport.MyVehicleStorage(vehicles);
+console.log(myVehicleStorage.getVehicles());
